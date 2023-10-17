@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+rootProject.name = "MVVMComponentization"
+include ':app'
+include ':library-common'
+include ':library-commonres'
+include ':library-commonui'
+include ':library-mvvm'
+include ':library-network'
+include ':module-sign'
+include ':module-delicacy'
