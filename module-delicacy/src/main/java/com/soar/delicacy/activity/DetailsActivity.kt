@@ -17,6 +17,7 @@ class DetailsActivity : BaseActivity<ActivityDetailsBinding>() {
         const val RECIPE_ITEM_KEY="RECIPE_ITEM_KEY"
     }
 
+    @JvmField
     @Autowired(name = RECIPE_ITEM_KEY)
     var recipesItem: RecipesItem?=null
 

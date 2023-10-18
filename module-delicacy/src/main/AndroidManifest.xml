@@ -5,5 +5,8 @@
         <activity
             android:name=".activity.RecipesListActivity"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.DetailsActivity"
+            android:screenOrientation="portrait"/>
     </application>
 </manifest>
