@@ -25,6 +25,8 @@ open class RouteConstants {
             const val DELICACY = "/delicacy"
             //食谱列表
             const val DELICACY_RECIPES = "$DELICACY/recipes"
+            //食谱详情
+            const val DELICACY_DETAILS = "$DELICACY/details"
         }
     }
 }

@@ -5,6 +5,7 @@ import android.view.View
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.alibaba.android.arouter.facade.annotation.Route
+import com.alibaba.android.arouter.launcher.ARouter
 import com.soar.common.router.RouteConstants
 import com.soar.delicacy.adapter.RecipesAdapter
 import com.soar.delicacy.databinding.ActivityHomeBinding
@@ -78,6 +79,9 @@ class RecipesListActivity : BaseActivity<ActivityHomeBinding>() {
 
     private val itemClickListener = RecipesAdapter.ItemClickListener {
         val item = recipesAdapter.getItem(it)
-        //DetailsActivity.open(this,item)
+        ARouter.getInstance()
+            .build(RouteConstants.Delicacy.DELICACY_DETAILS)
+            .withSerializable(DetailsActivity.RECIPE_ITEM_KEY,item)
+            .navigation(this)
     }
 }
